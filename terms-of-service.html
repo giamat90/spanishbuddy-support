@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — SpanishBuddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E4A67;
+      --primary-dark: #0C2A3E;
+      --secondary: #0C447C;
+      --gold: #8F6108;
+      --cream: #EAF0F4;
+      --primary-light: #E3EDF3;
+      --text: #0C2A3E;
+      --text-muted: #5C697C; /* the app's slate, a touch darker for AA contrast on tinted boxes */
+      --white: #ffffff;
+      --border: rgba(12, 42, 62, 0.12);
+      --radius: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      width: 100%;
+      background: var(--primary-dark);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .header .badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--cream);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      padding: 32px 20px 48px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      box-shadow: 0 2px 12px rgba(12, 42, 62, 0.08);
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .last-updated {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .intro-box {
+      background: var(--primary-light);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px;
+      margin-bottom: 28px;
+    }
+
+    .intro-box p {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 0;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--primary-dark);
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+
+    .card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .card ul li {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 12px;
+    }
+
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .info-box {
+      background: var(--primary-light);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px;
+      margin-top: 10px;
+    }
+
+    .info-box p {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 28px 18px; }
+      .card h2 { font-size: 24px; }
+      .card h3 { font-size: 18px; }
+      table { font-size: 13px; }
+      th, td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="badge" src="icon.png" width="40" height="40" alt="">
+    <h1>SpanishBuddy</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Terms of Service</h2>
+      <p class="last-updated">Last updated: November 21, 2026</p>
+
+      <div class="intro-box">
+        <p>Please read these Terms of Service carefully before using SpanishBuddy. By downloading or using the app, you agree to be bound by these terms. If you do not agree, please do not use SpanishBuddy.</p>
+      </div>
+
+      <h3>1. Acceptance of Terms</h3>
+      <p>These Terms of Service ("Terms") govern your use of the SpanishBuddy mobile application ("App"), developed by Giacomo Matzeu ("we", "us", or "our"). By accessing or using the App, you confirm that you are at least 18 years old and agree to these Terms and our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+      <h3>2. Eligibility</h3>
+      <p>You must be at least 18 years of age to use SpanishBuddy. By using the App, you represent and warrant that you meet this requirement.</p>
+
+      <h3>3. No Account, Your Own Device</h3>
+      <p>SpanishBuddy does not require an account and has no sign-in. There is nothing to register and no credentials for you to protect on our end. All of your progress — level, saved words, streak, review schedule — is created and stored entirely on your own device.</p>
+      <p>Because of this, you are responsible for your own device and its data: if you uninstall the App, lose the device, or clear its storage, your data is deleted and we have no copy to restore it from. Use the in-app backup/export feature (manual, or the optional automatic backup to a folder you choose) if you want a copy you control (see our <a href="privacy-policy.html">Privacy Policy</a>).</p>
+
+      <h3>4. Cost</h3>
+      <p>SpanishBuddy is free to use. All core features — your daily personalised word, the vocabulary vault, word streak, and spaced-repetition review — are available at no cost, with no subscription and no in-app purchases. If paid features are introduced in the future, these Terms will be updated accordingly and you will be notified before any charge applies.</p>
+
+      <h3>5. Optional, Bring-Your-Own-Key AI Feature</h3>
+      <p>SpanishBuddy includes one optional AI feature ("Explore Further") that is off by default. To use it, you must choose a provider (Anthropic, OpenAI or another OpenAI-compatible service) and supply your own API key, obtained directly from that provider under your own account and subject to the provider's own terms and any usage costs it charges you. You acknowledge that:</p>
+      <ul>
+        <li>Enabling this feature causes your device to send requests directly to the provider's API, using your key — we do not operate, proxy, or monitor this traffic</li>
+        <li>Any usage charges billed by the provider to your account are your responsibility, not ours</li>
+        <li>AI-generated content (examples, usage notes, exercises) may occasionally be inaccurate or imperfect and is provided for language-practice purposes only</li>
+        <li>You are responsible for keeping your own API key confidential; we store it locally on your device and never transmit it anywhere except directly to the provider you chose to authenticate your own requests</li>
+      </ul>
+
+      <h3>6. Acceptable Use</h3>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the App for any unlawful purpose</li>
+        <li>Attempt to reverse-engineer, decompile, or exploit the App</li>
+        <li>Use the optional AI feature to generate content unrelated to Spanish language learning, or in a way that violates your provider's usage policies</li>
+      </ul>
+
+      <h3>7. Intellectual Property</h3>
+      <p>All content, design, and code in SpanishBuddy are owned by Giacomo Matzeu unless otherwise stated. You may not copy, reproduce, or distribute any part of the App without our written permission.</p>
+
+      <h3>8. Disclaimer of Warranties</h3>
+      <p>SpanishBuddy is provided "as is" without warranties of any kind, express or implied. We do not warrant that the App will be error-free or uninterrupted, or that any AI-generated content will always be accurate. Your use of the App is at your own risk.</p>
+
+      <h3>9. Limitation of Liability</h3>
+      <p>To the fullest extent permitted by applicable law, Giacomo Matzeu shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of SpanishBuddy, including but not limited to data loss (for example, from an uninstall, device loss, or a failed, missing or incomplete backup or restore) or loss of profits.</p>
+
+      <h3>10. Governing Law</h3>
+      <p>These Terms are governed by the laws of Italy. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of Italy. If you are an EU consumer, you may also benefit from mandatory consumer protection provisions of your country of residence.</p>
+
+      <h3>11. Changes to These Terms</h3>
+      <p>We may update these Terms from time to time. We will note material changes on this page. Continued use of SpanishBuddy after changes are posted constitutes your acceptance of the updated Terms.</p>
+
+      <h3>12. Deleting Your Data</h3>
+      <p>Since SpanishBuddy has no account or server, there is no account for us to delete. See <a href="delete-account.html">Delete Your Data</a> for how to remove everything the App has stored on your device.</p>
+
+      <h3>13. Contact</h3>
+      <div class="info-box">
+        <p>
+          <strong>Giacomo Matzeu</strong><br>
+          SpanishBuddy App Developer<br>
+          <a href="contact.html">Contact us</a> &middot; <a href="delete-account.html">Delete your data</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 SpanishBuddy &middot; <a href="contact.html">Contact</a> &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="delete-account.html">Delete Your Data</a></p>
+  </div>
+
+</body>
+</html>

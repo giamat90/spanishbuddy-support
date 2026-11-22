@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your Data — SpanishBuddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E4A67;
+      --primary-dark: #0C2A3E;
+      --secondary: #0C447C;
+      --gold: #8F6108;
+      --cream: #EAF0F4;
+      --primary-light: #E3EDF3;
+      --text: #0C2A3E;
+      --text-muted: #5C697C; /* the app's slate, a touch darker for AA contrast on tinted boxes */
+      --white: #ffffff;
+      --border: rgba(12, 42, 62, 0.12);
+      --error: #D3202F;
+      --radius: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      width: 100%;
+      background: var(--primary-dark);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .header .badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--cream);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 560px;
+      padding: 32px 20px 48px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: 0 2px 12px rgba(12, 42, 62, 0.08);
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--primary-dark);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .card p.muted {
+      color: var(--text-muted);
+    }
+
+    .info-box {
+      background: var(--primary-light);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px;
+      margin: 16px 0 24px;
+    }
+
+    .info-box h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-box ul li {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 3px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .info-box ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 4px 0 4px 34px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .platform-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="badge" src="icon.png" width="40" height="40" alt="">
+    <h1>SpanishBuddy</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Delete Your Data</h2>
+      <p>SpanishBuddy has no account and no server — everything the app knows about your learning (your level, saved words, streak, and review schedule) lives only in a local database on your own device. There is nothing stored anywhere else, so there is no remote "account" for us to delete on your behalf, and no waiting period.</p>
+
+      <div class="info-box">
+        <h4>What's stored on your device:</h4>
+        <ul>
+          <li>Your learner profile (CEFR level, native/UI language)</li>
+          <li>Your saved words and spaced-repetition (SRS) progress</li>
+          <li>Your daily word history and streak</li>
+          <li>Your AI provider API key and provider settings, only if you set them for the optional AI feature</li>
+        </ul>
+      </div>
+
+      <p>Backup files are stored <em>outside</em> the app, in the place you chose. This includes files you exported yourself and, if you turned on automatic backup, the copies the app wrote to your chosen folder. Uninstalling the app does not delete them; remove them from that folder (and from any cloud app that syncs it) yourself.</p>
+
+      <h3>Delete everything right now</h3>
+      <p>Choose whichever is easiest — both remove all app data immediately and permanently.</p>
+
+      <span class="platform-label">Simplest</span>
+      <ol class="steps">
+        <li>Long-press the SpanishBuddy icon on your home screen or app drawer</li>
+        <li>Tap <strong>Uninstall</strong></li>
+      </ol>
+
+      <span class="platform-label">Keep the app, wipe the data</span>
+      <ol class="steps">
+        <li>Open your phone's <strong>Settings</strong> → <strong>Apps</strong></li>
+        <li>Select <strong>SpanishBuddy</strong></li>
+        <li>Tap <strong>Storage &amp; cache</strong> → <strong>Clear storage</strong></li>
+      </ol>
+
+      <p class="muted">Either action deletes the app's local database and settings straight away — there's no server-side copy left behind, and nothing for us to process a request for.</p>
+
+      <h3>A note on backups you made yourself</h3>
+      <p class="muted">If you ever used the in-app "Export backup" feature, that created a <code>.json</code> file you chose to save somewhere (e.g. Google Drive, your phone's Files app, or emailed to yourself). Those copies are under your control — deleting them is up to you, wherever you put them. We never receive or keep a copy of your backup file.</p>
+
+      <p>Questions about what data SpanishBuddy keeps? See our <a href="privacy-policy.html">Privacy Policy</a>, or <a href="contact.html">contact us</a> if something here doesn't match what you're seeing in the app.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 SpanishBuddy &middot; <a href="contact.html">Contact</a> &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></p>
+  </div>
+
+</body>
+</html>
