@@ -184,7 +184,7 @@
   <div class="container">
     <div class="card">
       <h2>Privacy Policy</h2>
-      <p class="last-updated">Last updated: November 23, 2026</p>
+      <p class="last-updated">Last updated: November 27, 2026</p>
 
       <div class="info-box">
         <p><strong>In short:</strong> SpanishBuddy has no account, no server, and no backend. Everything you do in the app — your level, your saved words, your streak, your review schedule — is stored only in a local database on your own device. We (the developer) never receive it, see it, or store a copy of it anywhere.</p>
@@ -210,7 +210,7 @@
       <ul>
         <li>You must choose a provider in Settings — Anthropic (Claude), OpenAI, or another OpenAI-compatible service whose address you enter yourself — and enter your own API key for it. The app ships with no key of its own</li>
         <li>When you use the feature, your device calls the provider's API <strong>directly</strong>, with your key — there is no SpanishBuddy server in between and nothing is proxied or logged by us</li>
-        <li>Only the word, its level, and your native language are sent to the provider you chose to generate the response — never your saved word list, profile, or any other app data</li>
+        <li>Only the word (with its article, if it has one), its meaning as the app shows it, its level, and your native language are sent to the provider you chose to generate the response, with fixed instructions asking for the study material — never your saved word list, profile, or any other app data</li>
         <li>Your API key is stored locally on your device only. It is not included in backup exports unless you explicitly choose to include it when exporting (see below), and it is never sent anywhere except directly to the provider you chose, as required to authenticate the request</li>
       </ul>
       <p>Use of this feature is subject to the privacy policy of the provider you choose (for example <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's</a> or OpenAI's), since your device is communicating with that provider directly using your own key and your own account/usage limits.</p>
@@ -234,7 +234,7 @@
         </tr>
         <tr>
           <td><strong>The AI provider you choose (Anthropic, OpenAI or a compatible service)</strong></td>
-          <td>A single word, CEFR level, and native language — nothing else</td>
+          <td>A single word, its meaning, CEFR level, and native language — no other app data</td>
           <td>Only if you choose a provider, set your own API key and use "Explore Further"</td>
         </tr>
         <tr>
